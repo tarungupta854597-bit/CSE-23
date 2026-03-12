@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data type</title>
+</head>
+<body>
+    <script>
+        //js data value types..
+        //primitive --imutablesingel data types in js..
+        ////string number,boolean,undefined,null,and symbol
+        //string
+        var myname="tarun gupta";
+        //integer
+        var number=1665313156;
+        //bool
+        var ismarried=false;
+        //null
+        var myaddress=null;
+        console.log(myaddress);
+        console.log(myname + "is married" + ismarried);
+        //bigint 
+        var mynum=BigInt ("15156984137631813735");
+        console.log(mynum);
+        console.log(typeof(mynum));
+        let myInfo={
+            name:"tarun",
+            class:"cse-23",
+        }
+        console.log(myInfo);
+        //object lenght
+       var key = Object.keys(myInfo);
+       console.log(key.length);
+       function cal()
+       {
+        var num1=10;
+        var num2=20;
+        var add=num1+num2;
+        console.log("addition of num1 and num2 is " + add);
+       }
+       cal();
+       //array
+       let student =["tarun","ankit", "tushar"];
+       console.log(student);
+    </script>
+</body>
+</html>
