@@ -27,6 +27,65 @@
             console.log("addition is" + (a+b));
         }
         add(123);
+        function sub(p,r)
+        {
+            console.log(p-r);
+        }
+        sub(20,10);
+
+        let msg = function()
+        {
+            console.log("hello abes");
+        }
+        msg();
+        //arrow function are the anonymous function and they dont have name and they are used
+        //  in the form of expression to make the code short;
+        let msg1=()=>console.log("hello tarun");
+        msg1();
+        let msg2=(a,b)=>{
+            var num1=a;
+            var num2=b;
+            var res=num1/num2;
+            console.log("result is" + res);
+        }
+        msg2(10,20);
+        (function(){
+            console.log("hello world");
+        })();
+        let myPromise=new Promise(function(resolve, reject){
+            let age=25;
+            if(age>=18)
+        {
+            resolve("valid age");
+        }
+        else
+        {
+            reject("invalid age");
+        }
+         });
+         myPromise.then(msg=>console.log(msg))
+         .catch(error=>console.log(error)); 
+         console.log(myPromise);
+         async function userInfo(){
+            try{
+         let userData=await fetch('https://api.github.com/users/tarungupta854597');
+         let response=await userData.Json();
+         console.log(response);
+        }
+        catch(error)
+        {
+           console.log(error)
+        }
+
+         }
+         let num=[4,53,53,5,6,2,,787,1,7,1,8,52];
+         
+
+
+        
+
+
+
 
     </script>
 </body>
